@@ -99,7 +99,7 @@ A API calcula a projeção de gastos para a próxima manutenção do veículo co
         Tendência de desgaste e crescimento linear baseada no histórico.
 
 Exemplo de Retorno (JSON)
-JSON
+```JSON
 
 {
   "modeloVeiculo": "Ford Fusion Hybrid",
@@ -107,10 +107,10 @@ JSON
   "mediaCustos": 1166.66,
   "previsaoCustoProximaManutencao": 1435.0
 }
-
+```
 📝 Exemplos de Payload (JSON)
 Criar/Mapear Cliente
-JSON
+```JSON
 
 {
   "nome": "Paulo Poças",
@@ -118,9 +118,9 @@ JSON
   "telefone": "11999999999",
   "cnh": "12345678900"
 }
-
+```
 Cadastrar Veículo
-JSON
+```JSON
 
 {
   "modelo": "Ford Fusion Hybrid",
@@ -132,9 +132,9 @@ JSON
   },
   "clienteId": 1
 }
-
+```
 Registrar Manutenção
-JSON
+```JSON
 
 {
   "descricao": "Revisão preventiva",
@@ -143,7 +143,7 @@ JSON
   "custo": 950,
   "veiculoId": 1
 }
-
+```
 📚 Arquitetura de Relacionamentos
 
     Cliente ── (1:N) ──> Veículo: Um cliente cadastrado pode possuir uma frota ou múltiplos veículos vinculados ao seu perfil.
